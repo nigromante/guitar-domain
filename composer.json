@@ -1,5 +1,5 @@
 {
-    "name": "nigromante/guitar",
+    "name": "nigromante/guitardomain",
     "description": "Dominio aplicacion guitar",
     "autoload": {
         "psr-4": {
