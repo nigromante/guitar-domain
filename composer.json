@@ -9,5 +9,6 @@
             "Nigromante\\Guitar\\": "src/"
         }
     },
-    "require": {}
+    "require": {},
+    "minimum-stability": "stable" 
 }
