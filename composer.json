@@ -1,0 +1,10 @@
+{
+    "name": "nigromante/guitar",
+    "description": "Dominio aplicacion guitar",
+    "autoload": {
+        "psr-4": {
+            "Nigromante\\Guitar\\": "src/"
+        }
+    },
+    "require": {}
+}
