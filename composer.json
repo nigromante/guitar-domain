@@ -1,6 +1,9 @@
 {
     "name": "nigromante/guitardomain",
     "description": "Dominio aplicacion guitar",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Nigromante\\Guitar\\": "src/"
