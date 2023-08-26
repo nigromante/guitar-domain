@@ -9,6 +9,8 @@
             "Nigromante\\Guitar\\": "src/"
         }
     },
-    "require": {},
+    "require": {
+        "spatie/data-transfer-object": "^3.9"
+    },
     "minimum-stability": "stable" 
 }
