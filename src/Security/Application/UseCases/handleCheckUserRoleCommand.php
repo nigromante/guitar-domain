@@ -5,7 +5,7 @@ namespace Nigromante\Guitar\Security\Application\UseCases;
 use Nigromante\Guitar\Security\Domain\Contracts\SecurityRepositoryInterface;
 use Nigromante\Guitar\Security\Infrastructure\Repositories\SecurityRepository;
 
-class CheckUserRoleCommandHandler
+class handleCheckUserRoleCommand
 {
 
     private SecurityRepositoryInterface $repositorio;

@@ -1,6 +1,6 @@
 <?php 
 namespace Nigromante\Guitar\Exports;
-use Nigromante\Guitar\Security\Application\UseCases\CheckUserRoleCommandHandler;
+use Nigromante\Guitar\Security\Application\UseCases\handleCheckUserRoleCommand;
 use Nigromante\Guitar\Security\Application\UseCases\CheckUserRoleCommand;
 
 
@@ -10,7 +10,7 @@ class CommandHandlers {
 
         return [
 
-            CheckUserRoleCommand::class => CheckUserRoleCommandHandler::class
+            CheckUserRoleCommand::class => handleCheckUserRoleCommand::class
 
         ];
     }
