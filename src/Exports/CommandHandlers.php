@@ -10,7 +10,7 @@ class CommandHandlers {
 
         return [
 
-            CheckUserRoleComman::class => CheckUserRoleCommandHandler::class
+            CheckUserRoleCommand::class => CheckUserRoleCommandHandler::class
 
         ];
     }
