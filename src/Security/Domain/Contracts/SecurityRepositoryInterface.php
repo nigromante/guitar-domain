@@ -5,7 +5,7 @@ use Nigromante\Guitar\Security\Domain\Entities\UserRoles;
 
 interface SecurityRepositoryInterface {
 
-    public function findByIdOrFail( string $sessionId ) : UserRoles ;
+    public function findUserRolesByIdOrFail( string $sessionId ) : UserRoles ;
 
 
 }

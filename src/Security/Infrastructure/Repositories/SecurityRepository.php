@@ -16,7 +16,7 @@ class SecurityRepository implements SecurityRepositoryInterface {
         $this->db = mysqli_connect($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
     }
 
-    public function findByIdOrFail( string $userId ) :UserRoles {
+    public function findUserRolesByIdOrFail( string $userId ) :UserRoles {
     
         /*
         $sql = "SELECT * FROM `usuarios` WHERE `Email`='{$email->value()}'";

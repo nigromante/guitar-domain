@@ -1,6 +1,6 @@
 <?php
 
-namespace Nigromante\Guitar\Security\Application\UseCases;
+namespace Nigromante\Guitar\Security\Application\Command;
 
 class CheckUserRoleCommand
 {

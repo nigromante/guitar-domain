@@ -1,6 +1,6 @@
 <?php
 
-namespace Nigromante\Guitar\Security\Application\UseCases;
+namespace Nigromante\Guitar\Security\Application\Command;
 
 use Nigromante\Guitar\Security\Domain\Contracts\SecurityRepositoryInterface;
 use Nigromante\Guitar\Security\Infrastructure\Repositories\SecurityRepository;
@@ -15,9 +15,9 @@ class handleCheckUserRoleCommand
         $this->repositorio = new SecurityRepository();
     }
 
-    public function handle( CheckUserRoleCommand $command ) 
+    public function handle(CheckUserRoleCommand $command)
     {
-        $userRoles = $this->repositorio->findByIdOrFail( $command->userId);
-        return $userRoles->hasRole( $command->role );
+        $userRoles = $this->repositorio->findUserRolesByIdOrFail($command->userId);
+        return $userRoles->hasRole($command->role);
     }
 }
