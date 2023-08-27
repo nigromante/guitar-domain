@@ -2,6 +2,7 @@
 namespace Nigromante\Guitar\Security\Infrastructure\Repositories;
 
 use Nigromante\Guitar\Security\Domain\Contracts\SecurityRepositoryInterface;
+use Nigromante\Guitar\Security\Domain\Entities\UserResources;
 use Nigromante\Guitar\Security\Domain\Entities\UserRoles;
 
 class SecurityRepository implements SecurityRepositoryInterface {
@@ -31,4 +32,22 @@ class SecurityRepository implements SecurityRepositoryInterface {
         */
         return new UserRoles( '123' , 'Julian' , ["RoleSaleService", "RoleCustomerService"] ) ;
     }
+
+    public function findUserResourcesByIdOrFail( string $userId ) :UserResources {
+    
+        /*
+        $sql = "SELECT * FROM `usuarios` WHERE `Email`='{$email->value()}'";
+        $result = mysqli_query($this->db, $sql);
+        $row = $result->fetch_assoc();
+
+        if (!$row) {
+            throw UserNotFoundException::Send($email->value());
+        }
+
+        return new User( $email->value(), $row["Nombre"], $row["Apellido"] , $row["Theme"]) ; 
+        */
+        return new UserResources( '123' , 'Julian' , ["RoleSaleService", "RoleCustomerService"] ) ;
+    }
+
+    
 }
