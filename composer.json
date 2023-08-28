@@ -10,7 +10,7 @@
         }
     },
     "require": {
-        "spatie/data-transfer-object": "^3.9"
+        "spatie/laravel-data": "^3.8"
     },
     "minimum-stability": "stable" 
 }
