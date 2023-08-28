@@ -46,7 +46,7 @@ class SecurityRepository implements SecurityRepositoryInterface {
 
         return new User( $email->value(), $row["Nombre"], $row["Apellido"] , $row["Theme"]) ; 
         */
-        return new UserResources( '123' , 'Julian' , ["RoleSaleService", "RoleCustomerService"] ) ;
+        return new UserResources( '123' , 'Julian' , ["123", "1234"] ) ;
     }
 
     
