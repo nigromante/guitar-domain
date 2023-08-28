@@ -2,7 +2,7 @@
 namespace Nigromante\Guitar\Globals\System;
 
 
-class EventManager extends Nigromante\Framework\Event 
+class EventManager extends \Nigromante\Framework\Event 
 {
 
 }
